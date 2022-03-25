@@ -1,0 +1,80 @@
+What has changed in each release.
+
+JS8MAP 0.7
+
+* Added a configuration file to remember all settings so you no longer
+need to put them on the command line.  A few things on the command line
+have changed:
+
+   --lock now just prevents the map from autromatically rescaling.
+   --corners now holds the lower-left and upper-right grid coordinates
+   	     for the map, as --lock used to do.
+   --config specifies an option file if you do not want to use the
+   	    default location of js8map.ini.
+
+* There is a new "save config" menu option to save all current settings,
+including map zooming and panning, into the configuration file.
+
+JS8MAP 0.6
+
+* Added information popups.  Click on a station to find grid, time
+  since last heard from, other stations it hears, station info if known.
+
+* View menu items now display current setting.
+
+JS8MAP 0.56
+
+* Callsign underlining working again.  It indicates a station that
+has indicated that it has heard the local station.
+
+* Various bug fixes, especially to history display.
+
+JS8MAP 0.55
+
+* Main window can be resized and everything will scale to fit.
+
+* Maps can now be much better.  The trick is that any suppled
+maps in the 'maps' directory must be in EquiRectangular Projection.
+
+* UDP port from JS8CALL can now be set from the command line in
+addition to editing the ps8map.py source file.
+
+* New option under the View menu to turn on the display of historical
+data on who heard who.  This accumulates all reports of which stations
+heard whichother stations during this session.  This does not mean that
+they can STILL hear each other, only that they did at one time.
+
+JS8MAP 0.5
+
+* Standard menu functions replace some keystroke commands.
+
+* Callsigns of stations that can hear the local station are underlined.
+
+* Better default map
+
+JS8MAP 0.4
+
+* Addition of a first try world map underlay.  The base image is
+  too small so results in a fuzzy result but is good enough to
+  make sure that the zooming math is correct.
+
+* Added elapsed time since the last band change to the status line.
+
+* Reduced needless redraws of the map when nothing has changed.
+
+* Background maps can be chosen either with the --map=n commandline
+  option or by typing 'm' to the screen and entering a number on
+  the console.  This will eventually become a menu choice.
+
+JS8MAP 0.3
+
+* Addition of --icon command option to select initial setting of
+  displaying stations as colored icons or as callsigns.
+
+* Relaxation of callsign filtering for what constitutes a
+ 'proper' callsign.
+
+* Lines representing direct exchanges automatically dissapear
+ in one JS8 cycle: 15 seconds.
+
+* Stations sending CQ or HEARTBEAT are indicated by a colored circle.

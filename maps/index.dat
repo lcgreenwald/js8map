@@ -1,0 +1,14 @@
+# One line per map file.  All fields are required and are
+# as follows: filename, left longitude, right longitude,
+# bottom latitude, top latitude, left margin pixels,
+# right margin pixels, bottom margin pixels,
+# top margin pixels, and 'gamut'.
+
+# The 'gamut' setting tells JS8MAP whether to use light
+# or dark annotations.  Specify 0 for dark colored
+# maps and 1 for light colored maps maps.
+
+# Blank lines and comment lines are ignored.
+
+TrueColor.png, -180,+180, -90, +90,0,0,0,0,0
+LargeMaidenhead.png, -180,+180, -90, +90,0,0,0,0,0
